@@ -11,3 +11,31 @@
  *
  * 4. Выведите результирующий массив в консоль
  */
+
+const arr = [
+	{
+		carBrand: 'asdasd',
+		price: 10000,
+		isAvailableForSale: true
+	},
+	{
+		carBrand: 'asdasd',
+		price: 10000,
+		isAvailableForSale: false
+	},
+	{
+		carBrand: 'asdasd',
+		price: 20000,
+		isAvailableForSale: true
+	},
+];
+
+const newObj = {
+	carBrand: 'asdasd',
+	price: 20000,
+	isAvailableForSale: true
+};
+
+arr.push(newObj)
+
+console.log(newObj);

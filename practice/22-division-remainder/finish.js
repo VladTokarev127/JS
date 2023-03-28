@@ -10,3 +10,10 @@
 
 const myNumber1 = 10 // 10 = 3 + 3 + 3 + 1
 const myNumber2 = 3
+
+console.log(myNumber1 % myNumber2);
+
+// приоритет такой же как и у * и /
+// ассоциативность слева на право
+
+console.log(((100 % 23) % 5) % 3);

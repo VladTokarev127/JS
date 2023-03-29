@@ -17,6 +17,12 @@ let person = {
   cartId: 435,
 }
 
+// Ограничение зоны видимости
+{
+	let _id, processed, cart;
+	({_id, processed, cart, ...person} = person);
+}
+
 console.log(person)
 /*
 {

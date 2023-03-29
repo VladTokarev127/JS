@@ -9,7 +9,18 @@ const vowels = ['a', 'e', 'i', 'o', 'u']
 
 const str = 'Today is the best day of my life'
 
-// Напишите код здесь
+// str.split('')
+// 	.forEach((letter) => {
+// 		if(vowels.includes(letter)) {
+// 			vowelsCount++;
+// 		}
+// 	});
+
+for (const letter of str) {
+	if (vowels.includes(letter)) {
+		vowelsCount += 1
+	}
+}
 
 console.log(vowelsCount)
 // 9

@@ -6,7 +6,15 @@
  */
 
 function square(a) {
-  console.log(a * a)
+	if (a === undefined) {
+		throw new Error('Функция "square" не может быть вызвана без аргумента');
+	}
+
+	// 2 вариант решения
+	// if (arguments.length === 0) {
+	// 	throw new Error('Функция "square" не может быть вызвана без аргумента')
+	// }
+	console.log(a * a);
 }
 
 square(10)

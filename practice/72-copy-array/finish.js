@@ -6,7 +6,9 @@
 
 const a = [1, 2, 3]
 
-// Напишите код здесь
+// const b = [...a];
+// const b = Array.from(a);
+const b = JSON.parse(JSON.stringify(a)); // Вложенные ссылки не сохраняются, создаётся полностью новый объект
 
 b.push('newElement')
 

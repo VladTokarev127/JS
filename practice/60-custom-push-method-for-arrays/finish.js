@@ -16,6 +16,22 @@
  * и протестируйте новый метод "customPush" и сравните его с "push"
  *
  * 4. Что произойдет, если имя пользовательского метода
- * в классе "CustomArray" также будет "push" вместо "customPush"?
+ * в классе "CustomArray" также будет "push" вместо "customPush"? -- Произойдёт преобразование метода
  * Попробуйте это.
  */
+
+class CustomArray extends Array {
+	customPush(newElement) {
+		this[this.length] = newElement;
+		console.log(`Новый элемент ${newElement} был только что добавлен в массив`);
+	}
+}
+
+const arr = new CustomArray(1,2,3,4);
+arr.customPush(10);
+
+console.log(arr);
+
+arr.push(20);
+
+console.log(arr);
